@@ -18,7 +18,7 @@ void push(int value) {
 int pop() {
     if (top < 0) {
         printf("Erro: Pilha vazia\n");
-        exit(1);
+        return -1;  // Retorna um valor de erro
     }
     return stack[top--];
 }
